@@ -19,10 +19,10 @@ Into The Void is a game where the player has to face an opponent on the battlefi
 <br>
 
 # Backlog
-Music 
-Win/Lose sound 
-Animated background 
-Cards have detailed backcover 
+- Music 
+- Win/Lose sound 
+- Animated background 
+- Cards have detailed backcover 
 
 <br>
 
