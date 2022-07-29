@@ -10,9 +10,11 @@ Into The Void is a game where the player has to face an opponent on the battlefi
 <br>
 
 # MVP
-Working game logic 
-Cards are displayed
-Replayability 
+- Cards are displayed for player 1 + 2
+- Desk of cards is show on the board 
+- X amount of rounds are played 
+- Able to replay the game 
+
 
 <br>
 
