@@ -1,14 +1,18 @@
+html {
+    margin: 0;
+   
+}
+
+
+
 body {
+    margin: 0;
     padding: 0;
     background-image: url('/images/menu.jpeg');
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-   align-items: center;
-   flex-direction: column;
-   justify-content: center;
+    background-size: 1000px 800px;
     
+  
 }
 
 body button {
@@ -18,19 +22,24 @@ body button {
     border: 2px;
     border-radius: 10px;
 }
+.start {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 350px;
+
+    
+}
 
 .logo-img {
-    width: 80%;
-    height: 80%;
-	display: flex;
+    width: 800px;
+    
     
     
 	
 
 }
-   
-body button {
-    padding: 20px 40px;
-    
 
-}
+
+
