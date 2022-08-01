@@ -1,4 +1,9 @@
 let startBtn = document.querySelector("#start-button");
+let splashScreen = document.querySelector("#splash");
+let gameOverScreen = document.querySelector("#gameOver");
+let gameScreen = document.querySelector("#game");
+let splashDiv = document.querySelector(".start-div");
+
 
 
 //cards
@@ -22,14 +27,15 @@ const cards = [
 
 const cardGame = new CardGame(cards);
 
-let score = 0
-let intervalId = 0
-
-let background = new Image()
-background.src = '../images/board-image.webp';
 
 window.onload = () => {
     memoryGame.shuffleCards(cards);
     }
 
 
+    startBtn.addEventListener("click", () => {
+      splashScreen.style.display = "none";
+      gameOverScreen.style.display = "none";
+      gameScreen.style.display = "block";
+      splashDiv.style.display = "none";
+    });

@@ -2,7 +2,7 @@ class CardGame {
     constructor(cards) {
         this.cards = cards;
     }
-}
+
 
 shuffleCards() {
     let copyCards = [...this.cards];
@@ -11,6 +11,8 @@ shuffleCards() {
         let randomIndex = Math.floor(Math.random() * copyCards.length);
         shuffled.push(copyCards[randomIndex]);
         copyCards.splice(randomIndex, 1);
-    }
+        }
     this.cards = shuffled;
+    }
+
 }
