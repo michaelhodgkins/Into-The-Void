@@ -63,3 +63,10 @@ background-size: cover;
   box-shadow: inset 0px 0px 20px -6px purple;
 }
 
+.card {
+    width: 5.71cm;
+    height: 8.8cm;
+    background-image: url("../images/back.jpeg");
+    background-size: cover;
+}
+
