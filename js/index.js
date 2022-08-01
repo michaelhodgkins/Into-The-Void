@@ -34,16 +34,19 @@ window.addEventListener("load", (event) => {
   gameScreenContainer.style.display = "none";
   cardGame.shuffleCards(cards);
 
+
+     let randomCard = cards[Math.floor(Math.random()* cards.length)];
+     
+    console.log(randomCard);
+    
+     html += `
+       <div class="card" data-card-name="${randomCard.name}">
+         <div class="back" name="${randomCard.img}"></div>
+         <div class="front" style="background: url(img/${randomCard.img}) no-repeat"></div>
+       </div>
+       `;
+       console.log(randomCard);
   
-  cardGame.cards.forEach((pic) => {
-    //console.log(pic);
-    html += `
-      <div class="card" data-card-name="${pic.name}">
-        <div class="back" name="${pic.img}"></div>
-        <div class="front" style="background: url(img/${pic.img}) no-repeat"></div>
-      </div>
-      `;
-  });
 
 console.log(html);
 document.querySelector("#game").innerHTML = html;
