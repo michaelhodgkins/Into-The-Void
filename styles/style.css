@@ -9,35 +9,41 @@ body {
     margin: 0;
     padding: 0;
     background-image: url('/images/menu.jpeg');
+    background-size: cover;
+    background-position: top left;
     background-repeat: no-repeat;
-    background-size: 1000px 800px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
   
 }
 
-body button {
-    font-size: 40px;
-    background-color: yellow;
-    color: black;
-    border: 2px;
-    border-radius: 10px;
-}
+
 .start {
-    width: 350px;
+    height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-left: 350px;
-
+   
+}
+#splash {
+   width: 80vw;
+   height: 80vh;
+}
+#start-button {
+    background-color: yellow;
+    border-color: black;
+    border-width: 10px;
+    width: 150px;
     
 }
 
-.logo-img {
-    width: 800px;
-    
-    
-    
-	
+.title {
+    width: 80vw;
+
 
 }
 
