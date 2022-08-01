@@ -28,11 +28,21 @@ const cards = [
 const cardGame = new CardGame(cards);
 
 
-window.onload = () => {
-    memoryGame.shuffleCards(cards);
-    }
+window.addEventListener("load", (event) => {
+  gameoverScreen.style.display = "none";
+  cardGame.shuffleCards(cards);
 
-
+  let html = "";
+  cardGame.cards.forEach((pic) => {
+    html += `
+      <div class="card" data-card-name="${pic.name}">
+        <div class="back" name="${pic.img}"></div>
+        <div class="front" style="background: url(img/${pic.img}) no-repeat"></div>
+      </div>
+      `;
+  });
+});
+  
     startBtn.addEventListener("click", () => {
       splashScreen.style.display = "none";
       gameOverScreen.style.display = "none";

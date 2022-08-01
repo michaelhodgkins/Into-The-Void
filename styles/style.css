@@ -52,6 +52,14 @@ body {
 
 
 }
-
-
+.game-board {
+background-image: url("../images/board-image.webp");
+background-size: cover;
+  width: 80vw;
+  height: 80vh;
+  padding: 70px;
+  margin: 20px auto;
+  border-radius: 0px;
+  box-shadow: inset 0px 0px 20px -6px purple;
+}
 
