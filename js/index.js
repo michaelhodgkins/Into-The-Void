@@ -69,17 +69,32 @@ computerCardElement.setAttribute("style", `background-image: url(${computerCard.
 function compareCards(card1, card2) {
   if(card1.value > card2.value){
     player1++;
+    if (player1 == 3) {
+      gameScreen.style.display = "none";
+      gameOverScreen.style.display = "block";
+      splashScreen.style.display = "none";
+      gameScreenContainer.style.display = "none";
+      splashDiv.style.display = "none";
+    }
   } else if(card1.value < card2.value){
     player2++;
+    if (player2 == 3) {
+      gameScreen.style.display = "none";
+      gameOverScreen.style.display = "block";
+      splashScreen.style.display = "none";
+      gameScreenContainer.style.display = "none";
+      splashDiv.style.display = "none";
+    }
   }
 }
-
 
 // for (let i = 0; i < 15; i++) {
 //   getRandomCards();
 //   compareCards(playerCard,computerCard);
 //   console.log(playerCard,computerCard);
 // }
+
+
 
 console.log(player1, player2);
 
@@ -100,5 +115,7 @@ window.addEventListener("load", (event) => {
 
     buttonElement.addEventListener("click", () => {
       getRandomCards()
-      
+      compareCards(playerCard, computerCard);
+
+      console.log(player1,player2);
     });
