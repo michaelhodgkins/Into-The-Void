@@ -50,6 +50,14 @@ body {
     
 }
 
+#play {
+    background-color: black;
+    color: yellow;
+    width: 100px;
+    height: 75px;
+    font-size: large;
+}
+
 .title {
     width: 80vw;
 
@@ -73,3 +81,6 @@ background-size: cover;
     background-size: cover;
 }
 
+#player {
+    background-color: aqua;
+}
