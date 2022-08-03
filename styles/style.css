@@ -41,6 +41,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
  }
 #start-button {
     background-color: yellow;
@@ -73,6 +74,16 @@ background-size: cover;
   box-shadow: inset 0px 0px 20px -6px purple;
 }
 
+#scores {
+    font-size: 30px;
+    color: blue;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   align-content: center;
+    margin: 0;
+}
+
 
 #again-button {
     background-color: black;
@@ -91,7 +102,7 @@ background-size: cover;
 }
 
 
-h2 {
+h2 , h3 {
     font-size: 50px;
     color: azure;
     display: flex;

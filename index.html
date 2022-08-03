@@ -10,6 +10,10 @@
 <body>
     <div class="start-div"> <!--StartMenu,FirstScreen-->
         <div id="splash">
+            <!-- <audio controls autoplay loop>
+                <source src="/music/angels-danijel-zambo-main-version-03-34-10731.mp3" type="audio/mp3">
+                <embed src="/music/angels-danijel-zambo-main-version-03-34-10731.mp3" autostart="true" loop="true" hidden="true"> 
+              </audio> -->
             <img src="./images/into-the-void.png" class="title"/>
         <img src="./images/orb.gif" alt="into-the-void" class="title1" />
         <div id="text">
@@ -30,11 +34,12 @@
     
 
     <div class="game-board">
-        <div>
-            <h2>๓ץ รς๏гє: <span id="player-score"> 0 </span></h2>
-            <h2>Computer Score: <span id="computer-score"> 0 </span></h2>
+        <div id="scores">
+            <h1>My Score: <span id="player-score"> 0 </span></h1>
+            <h1>Computer Score: <span id="computer-score"> 0 </span></h1>
     
         </div>
+        <h3 id="round-point"></h3>
       <div id="game">
         <div class="card" id="player">
             <div class="back"></div>
@@ -48,11 +53,12 @@
         
       </div>  
 
-        <!--music to be added here-->
+        
     </div>
 
 <div class="final-screen"></div>
     <div id="gameOver">
+        <h4>RESULT:<span id="verdict"></span></h4>
         <img src="./images/orb.gif" alt="into-the-void" class="title" />
     <button id="again-button"> Reset</button>
     </div>
