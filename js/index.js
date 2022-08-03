@@ -1,6 +1,7 @@
 let startBtn = document.querySelector("#start-button");
 let splashScreen = document.querySelector("#splash");
 let gameOverScreen = document.querySelector("#gameOver");
+let resetBtn = document.querySelector("#again-button");
 let gameScreen = document.querySelector("#game");
 let splashDiv = document.querySelector(".start-div");
 let gameScreenContainer = document.querySelector(".game-board");
@@ -9,6 +10,8 @@ let playerCardElement = document.querySelector('#player');
 let computerCardElement = document.querySelector('#computer');
 let buttonElement = document.querySelector('#play');
 
+let playerScore = document.querySelector("#player-score");
+let computerScore = document.querySelector("#computer-score");
 let player1 = 0;
 let player2 = 0;
 
@@ -69,6 +72,7 @@ computerCardElement.setAttribute("style", `background-image: url(${computerCard.
 function compareCards(card1, card2) {
   if(card1.value > card2.value){
     player1++;
+    playerScore.innerHTML = player1.toString();
     if (player1 == 3) {
       gameScreen.style.display = "none";
       gameOverScreen.style.display = "block";
@@ -78,6 +82,7 @@ function compareCards(card1, card2) {
     }
   } else if(card1.value < card2.value){
     player2++;
+    computerScore.innerHTML = player2.toString();
     if (player2 == 3) {
       gameScreen.style.display = "none";
       gameOverScreen.style.display = "block";
@@ -111,6 +116,17 @@ window.addEventListener("load", (event) => {
       gameScreen.style.display = "flex";
       gameScreenContainer.style.display = "block";
       splashDiv.style.display = "none";
+    });
+
+    resetBtn.addEventListener("click", () => {
+      player1 = 0;
+      player2 = 0;
+      splashScreen.style.display = "block";
+      gameOverScreen.style.display = "none";
+      gameScreen.style.display = "none";
+      gameScreenContainer.style.display = "none";
+      splashDiv.style.display = "block";
+      window.location.reload();
     });
 
     buttonElement.addEventListener("click", () => {

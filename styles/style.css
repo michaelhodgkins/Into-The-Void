@@ -64,7 +64,7 @@ body {
 
 }
 .game-board {
-background-image: url("../images/board-image.webp");
+background-image: url("../images/gameboard2.jpeg");
 background-size: cover;
   width: 80vw;
   height: 80vh;
@@ -75,7 +75,7 @@ background-size: cover;
 }
 
 #gameOver {
-    background-image: url("../images/voidupdate.png");
+    background-image: url("../images/menu.jpeg");
     background-size: cover;
       width: 80vw;
       height: 80vh;
@@ -87,13 +87,30 @@ background-size: cover;
 
 }
 
+#again-button {
+    background-color: black;
+    color: yellow;
+    width: 100px;
+    height: 75px;
+    font-size: large;
+    
+}
+
 .card {
     width: 5.71cm;
     height: 8.8cm;
-    background-image: url("../images/back.jpeg");
+    background-image: url("../images/thevoid\ .png");
     background-size: cover;
 }
 
-#player {
-    background-color: aqua;
+#player-score{
+    color: brown;
+}
+
+h2 {
+    font-size: 30px;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around
 }
