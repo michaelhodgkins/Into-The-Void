@@ -1,15 +1,18 @@
+
+
 html {
     margin: 0;
    
 }
 
-
-
 body {
     margin: 0;
     padding: 0;
     background-color: black;
-    
+    font-family: 'Syncopate', sans-serif;
+
+
+
 }
 
 
@@ -70,20 +73,25 @@ background-size: cover;
   height: 80vh;
   padding: 70px;
   margin: 20px auto;
-  border-radius: 0px;
-  box-shadow: inset 0px 0px 20px -6px purple;
+  border-radius: 5px;
+  box-shadow: inset 0px 0px 20px -6px rgb(106, 9, 145);
 }
 
 #scores {
-    font-size: 30px;
-    color: blue;
+    font-size: 20px;
+    color: rgb(14, 143, 203);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
    align-content: center;
-    margin: 0;
+    margin-top: 50px;
+    
 }
 
+#round-point {
+    padding: 0;
+    margin: 0;
+}
 
 #again-button {
     background-color: black;
@@ -103,7 +111,7 @@ background-size: cover;
 
 
 h2 , h3 {
-    font-size: 50px;
+    font-size: 30px;
     color: azure;
     display: flex;
     flex-direction: row;

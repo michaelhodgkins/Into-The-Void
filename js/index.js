@@ -18,6 +18,7 @@ let player2 = 0;
 
 let roundTotal = document.querySelector("#round-point");
 let endResult = document.querySelector("#verdict");
+let winLose = document.querySelector('#final');
 let discardCards = [];
 //cards
 const playerCards = [
@@ -55,7 +56,7 @@ const computerCards = [
   { name: 'batman', img: '../images/set3.4.png', value: 3 },
   { name: 'robin', img: '../images/set3.5.png', value: 3 },
 ];
-
+roundTotal.innerText = 'Please draw your first card!';
 const cardGame = new CardGame(playerCards);
 let playerCard
 let computerCard
@@ -79,6 +80,7 @@ function compareCards(card1, card2) {
     playerScore.innerHTML = player1.toString();
     roundTotal.innerHTML = 'You won against the void, this time!';
     if (player1 == 3) {
+      winLose.innerText = 'YOU WIN';
       endResult.innerText = 3; 
       gameScreen.style.display = "none";
       gameOverScreen.style.display = "flex";
@@ -91,6 +93,7 @@ function compareCards(card1, card2) {
     computerScore.innerHTML = player2.toString();
     roundTotal.innerHTML = 'You lost against the void, try again!';
     if (player2 == 3) {
+      winLose.innerText = 'YOU LOSE';
       endResult.innerText = '3';
       gameScreen.style.display = "none";
       gameOverScreen.style.display = "flex";
@@ -102,7 +105,6 @@ function compareCards(card1, card2) {
     roundTotal.innerHTML = 'You Draw, try again!';
   }
 }
-
 console.log(player1, player2);
 
 let html = "";
