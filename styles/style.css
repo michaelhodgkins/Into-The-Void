@@ -1,8 +1,11 @@
-
+@keyframes move {
+	to {
+		background-position: 4500vh;
+	}
+}
 
 html {
     margin: 0;
-   
 }
 
 body {
@@ -132,4 +135,12 @@ ul li {
     color: aliceblue;
     list-style-type: '🪐';
     
+}
+
+.animation {
+  background-image: 
+    linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;  
+  animation: move 25s linear infinite;
 }
