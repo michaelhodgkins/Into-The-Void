@@ -9,25 +9,21 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     
 }
 
 
-.start {
+.start-div {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+
 }
 #splash {
-   display: block;
-   width: 80vw;
-   height: 80vh;
+   display: flex;
+   width: 100vw;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 #game {
     display: flex;
@@ -37,10 +33,14 @@ body {
     height: 80vh;
 
  }
+
  #gameOver {
-    display: block;
-    width: 80vw;
-    height: 80vh;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
  }
 #start-button {
     background-color: yellow;
@@ -59,8 +59,7 @@ body {
 }
 
 .title {
-    width: 80vw;
-
+    width: 400px;
 
 }
 .game-board {
@@ -74,18 +73,6 @@ background-size: cover;
   box-shadow: inset 0px 0px 20px -6px purple;
 }
 
-#gameOver {
-    background-image: url("../images/menu.jpeg");
-    background-size: cover;
-      width: 80vw;
-      height: 80vh;
-      padding: 70px;
-      margin: 20px auto;
-      border-radius: 0px;
-      box-shadow: inset 0px 0px 20px -6px purple;
-
-
-}
 
 #again-button {
     background-color: black;
@@ -103,14 +90,27 @@ background-size: cover;
     background-size: cover;
 }
 
-#player-score{
-    color: brown;
-}
 
 h2 {
+    font-size: 50px;
+    color: azure;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+h4 {
     font-size: 30px;
     color: azure;
     display: flex;
     flex-direction: row;
-    justify-content:space-around
+    justify-content:center;
+    text-decoration: underline;
+}
+
+ul li {
+
+    color: aliceblue;
+    list-style-type: '🪐';
+    
 }

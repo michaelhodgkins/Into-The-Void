@@ -75,7 +75,7 @@ function compareCards(card1, card2) {
     playerScore.innerHTML = player1.toString();
     if (player1 == 3) {
       gameScreen.style.display = "none";
-      gameOverScreen.style.display = "block";
+      gameOverScreen.style.display = "flex";
       splashScreen.style.display = "none";
       gameScreenContainer.style.display = "none";
       splashDiv.style.display = "none";
@@ -85,7 +85,7 @@ function compareCards(card1, card2) {
     computerScore.innerHTML = player2.toString();
     if (player2 == 3) {
       gameScreen.style.display = "none";
-      gameOverScreen.style.display = "block";
+      gameOverScreen.style.display = "flex";
       splashScreen.style.display = "none";
       gameScreenContainer.style.display = "none";
       splashDiv.style.display = "none";
@@ -121,11 +121,11 @@ window.addEventListener("load", (event) => {
     resetBtn.addEventListener("click", () => {
       player1 = 0;
       player2 = 0;
-      splashScreen.style.display = "block";
+      splashScreen.style.display = "flex";
       gameOverScreen.style.display = "none";
       gameScreen.style.display = "none";
       gameScreenContainer.style.display = "none";
-      splashDiv.style.display = "block";
+      splashDiv.style.display = "flex";
       window.location.reload();
     });
 
