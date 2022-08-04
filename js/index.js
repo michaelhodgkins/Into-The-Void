@@ -23,7 +23,7 @@ let discardCards = [];
 //cards
 const playerCards = [
   { name: 'blue', img: 'images/set1.1.png', value: 1},
-  { name: 'cat', img: '/images/set1.2.png', value: 1},
+  { name: 'cat', img: '/mages/set1.2.png', value: 1},
   { name: 'wolf', img: 'images/set1.3.png', value: 1 },
   { name: 'dragon', img: 'images/set1.4.png', value: 1 },
   { name: 'brain', img: 'images/set1.5.png', value: 1 },
