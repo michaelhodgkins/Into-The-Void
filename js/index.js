@@ -22,39 +22,39 @@ let winLose = document.querySelector('#final');
 let discardCards = [];
 //cards
 const playerCards = [
-  { name: 'blue', img: '../images/set1.1.png', value: 1},
-  { name: 'cat', img: '../images/set1.2.png', value: 1},
-  { name: 'wolf', img: '../images/set1.3.png', value: 1 },
-  { name: 'dragon', img: '../images/set1.4.png', value: 1 },
-  { name: 'brain', img: '../images/set1.5.png', value: 1 },
-  { name: 'lizard', img: '../images/set2.1.png', value: 2 },
-  { name: 'void', img: '../images/set2.2.png', value: 2 },
-  { name: 'skull', img: '../images/set2.3.png', value: 2 },
-  { name: 'warrior', img: '../images/set2.4.png', value: 2 },
-  { name: 'tree', img: '../images/set2.5.png', value: 2 },
-  { name: 'clouds', img: '../images/set3.1.png', value: 3 },
-  { name: 'robot', img: '../images/set3.2.png', value: 3 },
-  { name: 'joker', img: '../images/set3.3.png', value: 3 },
-  { name: 'batman', img: '../images/set3.4.png', value: 3 },
-  { name: 'robin', img: '../images/set3.5.png', value: 3 },
+  { name: 'blue', img: '/images/set1.1.png', value: 1},
+  { name: 'cat', img: '/images/set1.2.png', value: 1},
+  { name: 'wolf', img: '/images/set1.3.png', value: 1 },
+  { name: 'dragon', img: '/images/set1.4.png', value: 1 },
+  { name: 'brain', img: '/images/set1.5.png', value: 1 },
+  { name: 'lizard', img: '/images/set2.1.png', value: 2 },
+  { name: 'void', img: '/images/set2.2.png', value: 2 },
+  { name: 'skull', img: '/images/set2.3.png', value: 2 },
+  { name: 'warrior', img: '/images/set2.4.png', value: 2 },
+  { name: 'tree', img: '/images/set2.5.png', value: 2 },
+  { name: 'clouds', img: '/images/set3.1.png', value: 3 },
+  { name: 'robot', img: '/images/set3.2.png', value: 3 },
+  { name: 'joker', img: '/images/set3.3.png', value: 3 },
+  { name: 'batman', img: '/images/set3.4.png', value: 3 },
+  { name: 'robin', img: '/images/set3.5.png', value: 3 },
 ];
 
 const computerCards = [
-  { name: 'blue', img: '../images/set1.1.png', value: 1},
-  { name: 'cat', img: '../images/set1.2.png', value: 1},
-  { name: 'wolf', img: '../images/set1.3.png', value: 1 },
-  { name: 'dragon', img: '../images/set1.4.png', value: 1 },
-  { name: 'brain', img: '../images/set1.5.png', value: 1 },
-  { name: 'lizard', img: '../images/set2.1.png', value: 2 },
-  { name: 'void', img: '../images/set2.2.png', value: 2 },
-  { name: 'skull', img: '../images/set2.3.png', value: 2 },
-  { name: 'warrior', img: '../images/set2.4.png', value: 2 },
-  { name: 'tree', img: '../images/set2.5.png', value: 2 },
-  { name: 'clouds', img: '../images/set3.1.png', value: 3 },
-  { name: 'robot', img: '../images/set3.2.png', value: 3 },
-  { name: 'joker', img: '../images/set3.3.png', value: 3 },
-  { name: 'batman', img: '../images/set3.4.png', value: 3 },
-  { name: 'robin', img: '../images/set3.5.png', value: 3 },
+  { name: 'blue', img: '/images/set1.1.png', value: 1},
+  { name: 'cat', img: '/images/set1.2.png', value: 1},
+  { name: 'wolf', img: '/images/set1.3.png', value: 1 },
+  { name: 'dragon', img: '/images/set1.4.png', value: 1 },
+  { name: 'brain', img: '/images/set1.5.png', value: 1 },
+  { name: 'lizard', img: '/images/set2.1.png', value: 2 },
+  { name: 'void', img: '/images/set2.2.png', value: 2 },
+  { name: 'skull', img: '/images/set2.3.png', value: 2 },
+  { name: 'warrior', img: '/images/set2.4.png', value: 2 },
+  { name: 'tree', img: '/images/set2.5.png', value: 2 },
+  { name: 'clouds', img: '/images/set3.1.png', value: 3 },
+  { name: 'robot', img: '/images/set3.2.png', value: 3 },
+  { name: 'joker', img: '/images/set3.3.png', value: 3 },
+  { name: 'batman', img: '/images/set3.4.png', value: 3 },
+  { name: 'robin', img: '/images/set3.5.png', value: 3 },
 ];
 roundTotal.innerText = 'Please draw your first card!';
 const cardGame = new CardGame(playerCards);
@@ -135,6 +135,6 @@ window.addEventListener("load", (event) => {
     buttonElement.addEventListener("click", () => {
       getRandomCards()
       compareCards(playerCard, computerCard);
-      new Audio('/music/zapsplat_science_fiction_movement_slimy_weird_005_48737.mp3').play();
+      new Audio('music/zapsplat_science_fiction_movement_slimy_weird_005_48737.mp3').play();
       console.log(player1,player2);
     });
