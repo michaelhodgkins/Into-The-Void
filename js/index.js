@@ -122,8 +122,8 @@ window.addEventListener("load", (event) => {
     });
 
     resetBtn.addEventListener("click", () => {
-      player1 = 0;
-      player2 = 0;
+      playerScore.innerText = 0;
+      computerScore.innerText = 0;
       splashScreen.style.display = "flex";
       gameOverScreen.style.display = "none";
       gameScreen.style.display = "none";
