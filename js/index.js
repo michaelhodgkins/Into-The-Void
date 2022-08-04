@@ -136,6 +136,6 @@ window.addEventListener("load", (event) => {
     buttonElement.addEventListener("click", () => {
       getRandomCards()
       compareCards(playerCard, computerCard);
-
+      new Audio('/music/zapsplat_science_fiction_movement_slimy_weird_005_48737.mp3').play();
       console.log(player1,player2);
     });
