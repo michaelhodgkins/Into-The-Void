@@ -105,7 +105,6 @@ function compareCards(card1, card2) {
     roundTotal.innerHTML = 'You Draw, try again!';
   }
 }
-console.log(player1, player2);
 
 let html = "";
 window.addEventListener("load", (event) => {

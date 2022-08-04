@@ -3,14 +3,14 @@
 <br>
 
 # Description
-Into The Void is a game where the player has to face an opponent on the battlefield, three attributes are displayed and one is chosen at random. When your attribute is higher you gain a point. Both cards are then discarded. The game ends when either player reaches 5 points. It will then take you to the end screen where you can replay the game if you wish.
+Into The Void is a game where the player has to face an opponent on the battlefield, this game is down to pure luck and randomisation, 15 cards are split into three groups with three different values. When your value is higher, you gain a point. Both cards are then discarded. The game ends when either player reaches 3 points. It will then take you to the end screen where you can replay the game if you wish.
 
 **You can find a demo of the finished version here by clicking[here]**
 
 <br>
 
 # MVP
-- Cards are displayed for player 1 + 2
+- Cards are displayed for player 1 + computer
 - Desk of cards is show on the board 
 - X amount of rounds are played 
 - Able to replay the game 
@@ -28,31 +28,37 @@ Into The Void is a game where the player has to face an opponent on the battlefi
 
 # Data structure 
 <br>
-# States y States Transitions
-- splasScreen 
+- splashScreen 
 - gameScreen
--- gameOverScreen
+- gameOverScreen
+- transitions
+- animations
 
 <br>
 
 # Task
 - main buildSplashScreen
-- main addEventListener
+- main addEventListeners
 - main buildGameScreen
 - main buildGameOverScreen
 
 - game startGame
-- game buildCanvas 
-- game updateCanvas 
-- game drawCanvas 
+- game buildGameBoard 
+- game createCards
+- game includeLogic 
 
 - logic win/lose round
 - logic discardCard
 - logic discardCardFromDeck
 - logic pointsAdded
-- logic maximumScore
+- logic win/lose game 
 
 - game GameOver
 - game addEventListener 
 
-# Links
+# Credits
+
+Sophia March - Card Design Artist 
+DeviantArt - Card Images 
+Zapslat - Sound effects
+Uppbeat - Music 
