@@ -59,6 +59,9 @@ Into The Void is a game where the player has to face an opponent on the battlefi
 # Credits
 
 Sophia March - Card Design Artist 
+<br>
 DeviantArt - Card Images 
+<br>
 Zapslat - Sound effects
+<br>
 Uppbeat - Music 
