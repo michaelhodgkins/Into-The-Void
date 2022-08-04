@@ -5,7 +5,7 @@
 # Description
 Into The Void is a game where the player has to face an opponent on the battlefield, this game is down to pure luck and randomisation, 15 cards are split into three groups with three different values. When your value is higher, you gain a point. Both cards are then discarded. The game ends when either player reaches 3 points. It will then take you to the end screen where you can replay the game if you wish.
 
-**You can find a demo of the finished version here by clicking[here]**
+**You can find a demo of the finished version here by clicking['https://michaelhodgkins.github.io/']**
 
 <br>
 
